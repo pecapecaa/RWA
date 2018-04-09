@@ -1,0 +1,62 @@
+.red{
+    border:solid;
+    border-top-right-radius: 15px;
+    margin:5px;
+    padding:10px;
+    color:skyblue;
+    
+}
+.sumaLabela{
+    float:right;
+    margin:5px;
+}
+.dugmedesno{
+    float:right;
+    margin: 5px;
+}
+.dugmelevo{
+    margin:5px;
+}
+.temp{
+    border: solid 1px #03cdff;
+    padding: 5px;
+    background-clip: content-box;
+    background-color: #ccc;
+}
+.razmak{
+    margin:5px;
+    color:blue; 
+}
+header{
+    
+    color:white;
+    font-size:50px;
+    background-color:#17a2b8;;
+    text-align: center;
+}
+.pretraga{
+    margin-top:50px;
+    margin-bottom:20px;
+    text-align: center;
+    
+}
+.levidiv{
+    float:left;
+    width:60%;
+}
+.desnidiv{
+    float:left;
+    width:40%;
+}
+.ing{
+    float:left;
+    width:60%;
+}
+.ponovoRacunaj{
+    border: solid 1px skyblue;
+    float: right;
+    margin:5px;
+}
+.btn{
+    margin:2px;
+}

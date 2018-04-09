@@ -1,0 +1,85 @@
+{
+  "vinarija": [
+    {
+      "naziv": "Chardonnay",
+      "vrsta": "crno",
+      "procenat": "10",
+      "berba": "1999",
+      "adresa": "Nemanjica 50",
+      "cena": "2000",
+      "id": 1
+    },
+    {
+      "naziv": "Vranac",
+      "vrsta": "crno",
+      "procenat": "9999999",
+      "berba": "2002",
+      "adresa": "Nemanjica 2",
+      "cena": "1300",
+      "id": 2
+    },
+    {
+      "naziv": "Caberne Sauvignon",
+      "vrsta": "crveno",
+      "procenat": "14",
+      "berba": "2018",
+      "adresa": "Nemanjica 2",
+      "cena": "2500",
+      "id": 3
+    },
+    {
+      "naziv": "Muskat",
+      "vrsta": "roze",
+      "procenat": "12",
+      "berba": "2006",
+      "adresa": "Nemanjica 2",
+      "cena": "1000",
+      "id": 4
+    },
+    {
+      "naziv": "Zdrepceva krv",
+      "vrsta": "crveno",
+      "procenat": "12",
+      "berba": "2008",
+      "adresa": "Nemanjica 9",
+      "cena": "3400",
+      "id": 5
+    },
+    {
+      "naziv": "Petijevic",
+      "vrsta": "belo",
+      "procenat": "12",
+      "berba": "2001",
+      "adresa": "Tina",
+      "cena": "5000",
+      "id": 6
+    },
+    {
+      "naziv": "Vukoje",
+      "vrsta": "crno",
+      "procenat": "12",
+      "berba": "2004",
+      "adresa": "Gordiceva 2",
+      "cena": "2000",
+      "id": 7
+    },
+    {
+      "naziv": "Rubin",
+      "vrsta": "crno",
+      "procenat": "14",
+      "berba": "2018",
+      "cena": "1888",
+      "adresa": "Pancevacka 12",
+      "id": 8
+    },
+    {
+      "naziv": "Grasevina",
+      "vrsta": "belo",
+      "procenat": "12",
+      "berba": "2002",
+      "cena": "356",
+      "adresa": "Boza Jankovic",
+      "id": 9
+    }
+  ]
+}
