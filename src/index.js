@@ -46,17 +46,18 @@ import * as Rxjs from 'rxjs';
 
   let dugmePrikaz=document.createElement('button');
   dugmePrikaz.innerHTML="Prikazi vina";
-  dugmePrikaz.className="btn btn-info";
+  dugmePrikaz.className="btn btn-danger";
   leviDiv.appendChild(dugmePrikaz);
 
+  
   let dugmeDodaj=document.createElement('button');
   dugmeDodaj.innerHTML="Dodaj vino";
-  dugmeDodaj.className="btn btn-info";
+  dugmeDodaj.className="btn btn-danger";
   leviDiv.appendChild(dugmeDodaj);
-
+  
   let dugmeKalkulator=document.createElement('button');
   dugmeKalkulator.innerHTML="Kalkulator";
-  dugmeKalkulator.className="btn btn-info";
+  dugmeKalkulator.className="btn btn-danger";
   desniDiv.appendChild(dugmeKalkulator);
 
   Rxjs.Observable.fromEvent(dugmePrikaz,"click")
@@ -163,7 +164,9 @@ function iscrtajPrikazi(pom){
   
   Rxjs.Observable.fromEvent(dugmeBrisi,"click")
         .subscribe(()=> {
+          
           VinarijaService.delete("http://localhost:3000/vinarija/",pom.id);
+          console.log(vin.niz);
           setTimeout(ucitaj, 1000);
       })
   Rxjs.Observable.fromEvent(dugmeIzmeni,"click")
@@ -261,6 +264,41 @@ function iscrtajDodaj(){
 }
   
      
+$(function() {
+
+  //settings for slider
+  var width = 720;
+  var animationSpeed = 1000;
+  var pause = 3000;
+  var currentSlide = 1;
+
+  //cache DOM elements
+  var $slider = $('#slider');
+  var $slideContainer = $('.slides', $slider);
+  var $slides = $('.slide', $slider);
+
+  var interval;
+
+  function startSlider() {
+      interval = setInterval(function() {
+          $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+              if (++currentSlide === $slides.length) {
+                  currentSlide = 1;
+                  $slideContainer.css('margin-left', 0);
+              }
+          });
+      }, pause);
+  }
+  function pauseSlider() {
+      clearInterval(interval);
+  }
+
+  $slideContainer
+      .on('mouseenter', pauseSlider)
+      .on('mouseleave', startSlider);
+
+  startSlider();
+});
 
      
 

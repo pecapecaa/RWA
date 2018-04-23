@@ -1,26 +1,8 @@
 {
   "vinarija": [
     {
-      "naziv": "Chardonnay",
-      "vrsta": "crno",
-      "procenat": "10",
-      "berba": "1999",
-      "adresa": "Nemanjica 50",
-      "cena": "2000",
-      "id": 1
-    },
-    {
-      "naziv": "Vranac",
-      "vrsta": "crno",
-      "procenat": "9999999",
-      "berba": "2002",
-      "adresa": "Nemanjica 2",
-      "cena": "1300",
-      "id": 2
-    },
-    {
       "naziv": "Caberne Sauvignon",
-      "vrsta": "crveno",
+      "vrsta": "belo",
       "procenat": "14",
       "berba": "2018",
       "adresa": "Nemanjica 2",
@@ -64,22 +46,40 @@
       "id": 7
     },
     {
-      "naziv": "Rubin",
-      "vrsta": "crno",
-      "procenat": "14",
-      "berba": "2018",
-      "cena": "1888",
-      "adresa": "Pancevacka 12",
+      "naziv": "Banatsko",
+      "vrsta": "Rizling",
+      "procenat": "12",
+      "berba": "2002",
+      "cena": "1000",
+      "adresa": "Oslobodjenja 2",
       "id": 8
     },
     {
-      "naziv": "Grasevina",
+      "naziv": "Sauvignon Blanc",
       "vrsta": "belo",
-      "procenat": "12",
+      "procenat": "14",
       "berba": "2002",
-      "cena": "356",
-      "adresa": "Boza Jankovic",
+      "cena": "2200",
+      "adresa": "Medvedeva 22",
       "id": 9
+    },
+    {
+      "naziv": "Methuselah",
+      "vrsta": "crno",
+      "procenat": "14",
+      "berba": "2010",
+      "cena": "4000",
+      "adresa": "Nikole Pasica 22",
+      "id": 10
+    },
+    {
+      "naziv": "Carsko",
+      "vrsta": "crno",
+      "procenat": "12",
+      "berba": "2009",
+      "cena": "1999",
+      "adresa": "Valjevska 44",
+      "id": 11
     }
   ]
 }
