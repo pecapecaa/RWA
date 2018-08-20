@@ -165,7 +165,7 @@ function iscrtajPrikazi(pom){
   Rxjs.Observable.fromEvent(dugmeBrisi,"click")
         .subscribe(()=> {
           
-          VinarijaService.delete("http://localhost:3000/vinarija/",pom.id);
+          VinarijaService.delete(pom.id);
           console.log(vin.niz);
           setTimeout(ucitaj, 1000);
       })

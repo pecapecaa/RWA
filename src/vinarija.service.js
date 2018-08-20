@@ -1,12 +1,14 @@
 import {vino, Vino} from "./vino";
 import * as Rxjs from 'rxjs';
 
+const URL_ROOT = 'http://localhost:3000/vinarija/'
+
 export class VinarijaService{
 
     
 static postData(obj){
-    const url="http://localhost:3000/vinarija/";
-    fetch(`${url}`, {
+    
+    fetch(`${URL_ROOT}`, {
         method: 'post',
         headers: {
             
@@ -21,14 +23,14 @@ static postData(obj){
 }
 
 static getData() {
-    return fetch("http://localhost:3000/vinarija/")
+    return fetch(`${URL_ROOT}`)
         .then(response => response.json()) 
 }
 
-static delete(url,id){ 
+static delete(id){ 
             
   const addStudent=Rxjs.Observable.fromPromise(
-      fetch(`${url}${id}`, {
+      fetch(`${URL_ROOT}${id}`, {
           method: 'delete',
           headers: {
               
@@ -44,10 +46,9 @@ static delete(url,id){
       
 }
 static update(id){     
-  let url="http://localhost:3000/vinarija/";
   
   let put=Rxjs.Observable.fromPromise(
-      fetch(`${url}${id}`, {
+      fetch(`${URL_ROOT}${id}`, {
           method: 'put',
           headers: {
             'Accept': 'application/json',
